@@ -9,8 +9,8 @@
     flex-direction: column;
     justify-content: center;
     /*background-color: black;*/
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;    
+    width: 400px;
 }
 .contenedor >header{
     display: flex;
@@ -18,7 +18,7 @@
     justify-content: center;
     align-items: center;
     padding: 8px;
-    margin: 12px 8px 12px 8px;
+    margin: 12px 8px 0px 8px;
     gap: 20px;
     border-bottom: 1px solid;
     border-color:   rgb(17, 17, 17);;
@@ -49,15 +49,54 @@
     margin: 20px;
     gap: 35px;
 }
+/*
 .contenedor > body >form>input{
     padding: 12px;
     border-radius: 18px;
     border: 1px solid black;
+}*/
+.contenedor > body >button{
+    background-color: rgb(254, 254, 254);
+    height: 48px;
+    width: 100px;
+    font-size: 12px;
+    color: rgb(8, 8, 8);
+    border-radius: 30px;
+    border: 1px solid;
+    border-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.contenedor > body > button:first-of-type {
+    font-size: 18px;
+    border: 0px ;
+    color: rgb(151, 141, 141);
 }
 
 .contenedor > body >section{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+.contenedor > body >section > .center{
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: center;
+    gap: 20px;
 }
 
+.contenedor > body >section > span {
+    align-self: flex-start;
+    display: flex;
+    gap: 20px;
+}
+
+.contenedor > body >section >span > :nth-child(1),
+.contenedor > body >section >span > :nth-child(2){
+    font-weight:lighter ;
+}
